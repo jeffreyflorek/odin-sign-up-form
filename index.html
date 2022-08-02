@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Odin Sign-Up Form</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up!</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <h1>Wow, isn't this cool?</h1>
+  <header>
+    <div class="heading">
+      <img src="./odin-lined.png" alt="odin icon">
+      <h1>Odin</h1>
+    </div>
+    <div class="attribution">Image by <a href="https://unsplash.com/photos/fteR0e2BzKo">Sven Mieke on Unsplash</a>.</div>
+  </header>
+  <main>
+    <p class="call-to-action">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      Incidunt, nulla. Eaque voluptates ipsa, iusto autem ea
+      doloremque iure laborum alias necessitatibus tempore, quas
+      accusamus eius eum voluptas?
+    </p>
+    <p class="call-to-action">Tempore, ipsa dolor?</p>
+    <div class="form-card">
+      <h2 class="form-heading">Let's do this!</h2>
+      <form action="#" method="post" id="signUp">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" required />
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" id="phone" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" name="pasword" id="password" required />
+        </div>
+        <div class="form-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password" name="confirmPassword" id="confirmPassword" required />
+        </div>
+      </form>
+    </div>
+    <input class="submit-button" type="submit" value="Create Account" form="signUp" />
+    <p class="login">Already have an account? <a href="#">Log in</a>.</p>
+  </main>
 </body>
+
 </html>
